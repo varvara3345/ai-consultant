@@ -1,0 +1,40 @@
+{
+  "name": "ai-consultant",
+  "version": "1.0.0",
+  "description": "Десктопное AI-приложение консультанта для малого бизнеса",
+  "main": "desktop-app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "set NODE_ENV=development && electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^26.2.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.aiconsultant.app",
+    "productName": "AI Business Consultant",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "keywords": [
+    "electron",
+    "ai",
+    "business",
+    "consultant",
+    "marketing"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
